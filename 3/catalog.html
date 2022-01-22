@@ -21,7 +21,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
         </li>
       </ul>
 
@@ -37,9 +37,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Хочу сюда.</span>
-          </a>
+          <a class="navigation-link" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -51,9 +49,7 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">
-            <img class="breadcrumbs-link-icon" src="" alt="Главная">
-          </a>
+          <a class="breadcrumbs-link" href="index.html" aria-label="На главную"></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -116,24 +112,21 @@
        </form>
      </section>
 
-       <section class="sorting-hotels">
+     <section class="sorting-hotels">
          <h2 class="visually-hidden">Сортировка списка гостиниц Седоны</h2>
-       <select class="select-control" name="" id="" aria-label="Сортировка">
-         <option value="cheap">Сначала дешёвые</option>
-         <option value="expensive">Сначала дорогие</option>
-         <option value="popular">Сначала популярные</option>
-       </select>
-       <p class="hotels-found">Найдено гостиниц: 38</p>
-       <a class="button button-border" href="#" >
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button" href="#">
-        <span class="visually-hidden">Показать слайдшоу</span>
-      </a>
-      <a class="button" href="#">
-        <span class="visually-hidden">Показать список</span>
-      </a>
-    </section>
+         <select class="select-control" name="" id="" aria-label="Сортировка">
+           <option value="cheap">Сначала дешёвые</option>
+           <option value="expensive">Сначала дорогие</option>
+           <option value="popular">Сначала популярные</option>
+         </select>
+       <p class="hotels-found">Найдено гостиниц:
+         <span class="number-of-pages">38</span>
+       </p>
+       <button class="button-catalog-view button-catalog-view-active" type="button" disabled>Показать карточки</button>
+       <button class="button-catalog-view" type="button">Показать слайдшоу</button>
+       <button class="button-catalog-view" type="button">Показать список</button>
+     </section>
+
 
     <section class="catalog-hotels">
       <ul class="hotels-list">
@@ -145,8 +138,8 @@
           <span class="house-group">Гостиница</span>
           <b class="price-hotels">От 4000 ₽</b>
           <a class="hotels-card-button" href="#">Подробнее</a>
-          <a class="hotels-card-button" href="#">В избранное</a>
-          <img class="stars" src="" alt="" >
+          <button class="button-favourites-hotels" type="button">В избранное</button>
+          <img class="stars" src="" alt="">
           <span class="hotels-rating">Рейтинг: 8,5</span>
         </li>
         <li class="hotels-card">
@@ -157,7 +150,7 @@
           <span class="house-group">Гостиница</span>
           <b class="price-hotels">От 3000 ₽</b>
           <a class="hotels-card-button" href="#">Подробнее</a>
-          <a class="hotels-card-button" href="#">В избранное</a>
+          <button class="button-favourites-hotels" type="button">В избранное</button>
           <img class="stars" src="" alt="" >
           <span class="hotels-rating">Рейтинг: 8,9</span>
         </li>
@@ -169,7 +162,7 @@
           <span class="house-group">Гостиница</span>
           <b class="price-hotels">От 2000 ₽</b>
           <a class="hotels-card-button" href="#">Подробнее</a>
-          <a class="hotels-card-button" href="#">В избранное</a>
+          <button class="button-favourites-hotels" type="button">В избранное</button>
           <img class="stars" src="" alt="" >
           <span class="hotels-rating">Рейтинг: 9,2</span>
         </li>
@@ -181,7 +174,7 @@
           <span class="house-group">Гостиница</span>
           <b class="price-hotels">От 3 000 ₽</b>
           <a class="hotels-card-button" href="#">Подробнее</a>
-          <a class="hotels-card-button" href="#">В избранное</a>
+          <button class="button-favourites-hotels" type="button">В избранное</button>
           <img class="stars" src="" alt="" >
           <span class="hotels-rating">Рейтинг: 9,2</span>
         </li>
@@ -206,7 +199,7 @@
           </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="">10</a>
+          <a class="pagination-link">10</a>
         </li>
       </ul>
       <label>Гостиниц на странице:
@@ -229,7 +222,6 @@
   </main>
 
   <footer class="footer">
-    <h2 class="visually-hidden">Социальные сети</h2>
      <ul class="footer-social-list">
        <li class="footer-social-item">
          <a class="button" href="https://twitter.com/htmlacademy_ru" >
@@ -247,11 +239,9 @@
           </a>
        </li>
       </ul>
-      <h2 class="visually-hidden">Контакты</h2>
       <address class="footer-contacts-address">
        <a class="footer-contacts-address-phone" href="tel:78128121212" >+7 (812) 812-12-12</a>
       </address>
-      <h2 class="visually-hidden">Контакты автора сайта</h2>
       <a class="htmlacademy-link" href="https://htmlacademy.ru">
        <img class="htmlacademy-link-logo" src="" alt="Логотип html academy.">
       </a>
