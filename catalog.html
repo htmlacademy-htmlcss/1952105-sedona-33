@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <div class="body-conainer">
   <header class="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html" >
@@ -84,6 +85,7 @@
       </ul>
      </header>
        <h2 class="visually-hidden">Список гостиниц Седоны с фильтрами</h2>
+       <div class="catalog-filter-container">
        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -131,12 +133,16 @@
             </li>
           </ul>
         </fieldset>
+        <div class="button-filter-container">
          <button class="button catalog-filter-submit" type="submit">Применить</button>
          <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+        </div>
+      </div>
        </form>
      </section>
 
      <section class="sorting-hotels">
+       <div class="sorting-hotels-container">
        <h2 class="visually-hidden">Сортировка списка гостиниц Седоны</h2>
         <p class="hotels-found">Найдено гостиниц:
          <span class="number-of-pages">38</span>
@@ -146,6 +152,7 @@
            <option value="expensive">Сначала дорогие</option>
            <option value="popular">Сначала популярные</option>
          </select>
+         <div class="sorting-button">
        <button class="button-catalog-view button-catalog-view-active" type="button" disabled>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 0H0V6H4V0Z" fill="black"/>
@@ -177,10 +184,13 @@
           </svg>
          <span class="visually-hidden">Показать список</span>
         </button>
+      </div>
+    </div>
      </section>
 
 
     <section class="catalog-hotels">
+      <div class="catalog-hotels-container">
       <ul class="hotels-list">
         <li class="hotels-card">
           <a class="hotels-card-link" href="#">
@@ -231,8 +241,11 @@
           <span class="hotels-rating">Рейтинг: 9,2</span>
         </li>
       </ul>
+      <div class="show-more-container">
       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-      <ul class="pagination">
+    </div>
+      <div class="pagination">
+      <ul class="pagination-list">
         <li class="pagination-item pagination-current">
           <a class="pagination-link link-current" href="">1</a>
         </li>
@@ -260,6 +273,8 @@
           <option value="8">8</option>
         </select>
       </label>
+    </div>
+    </div>
     </section>
 
     <section class="mailing mailing-catalog">
@@ -314,5 +329,6 @@
         <span class="visually-hidden">Логотип htmlacademy.</span>
        </a>
   </footer>
+</div>
 </body>
 </html>
