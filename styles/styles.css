@@ -35,7 +35,7 @@ body {
   margin: 0;
 }
 
-.body-conainer {
+.body-container {
   width: 1200px;
   display: flex;
   flex-direction: column;
