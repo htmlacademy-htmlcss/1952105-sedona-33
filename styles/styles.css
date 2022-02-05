@@ -41,7 +41,6 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -80,7 +79,6 @@ img {
 .navigation-list {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -95,19 +93,22 @@ img {
   color: #000000;
   text-align: center;
   text-decoration: none;
-  padding: 20px 17px;
+  margin-right: 0;
+  padding-bottom: 20px;
+}
+
+.navigation-item {
+  margin-right: 34px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
 }
 
 .navigation-user {
   display: flex;
   align-items: center;
   margin-left: auto;
-  min-width: 264px;
-}
-
-.navigation-user-link {
-  text-decoration: none;
-  padding: 0;
 }
 
 .nav-link-button {
@@ -154,6 +155,7 @@ img {
 .slogan-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   width: 720px;
   min-height: 282px;
@@ -167,15 +169,12 @@ img {
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 63px;
-  margin-bottom: 31px;
 }
 
 .slogan-description {
   font-size: 22px;
   line-height: 1.6;
-  margin: 0;
-  margin-bottom: 80px;
+  text-align: center;
 }
 
 /*advantages*/
@@ -264,7 +263,6 @@ img {
   font-size: 22px;
   line-height: 1.18;
   text-align: center;
-  margin: 0;
   margin-bottom: 56px;
 }
 
@@ -290,6 +288,7 @@ img {
 .mailing {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 411px;
   background-color: #587392;
   background: center/100% no-repeat url("../images/background.jpg");
@@ -312,7 +311,6 @@ img {
   line-height: 1.18;
   text-align: center;
   color: #ffffff;
-  margin: 0;
   margin-bottom: 46px;
 }
 
@@ -351,25 +349,16 @@ img {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 1056px;
-  min-height: 120px;
   margin: 0 auto;
 }
-
 .footer-social-list {
   display: flex;
-  align-items: center;
-  max-width: 150px;
+  justify-content: space-between;
+  min-width: 117px;
   list-style: none;
-  padding:0;
-}
-
-.footer-social-link {
-  padding: 10px 29px;
-  margin: 0 auto;
 }
 
 .footer-contacts-address-phone {
@@ -393,6 +382,7 @@ img {
 .catalog-hotel-filter {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   min-width: 100%;
   height: 408px;
   background-color: #587392;
@@ -403,8 +393,8 @@ img {
 .inner-header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-left: 71px;
-  margin-bottom: 75px;
 }
 
 .inner-header-title {
@@ -412,8 +402,6 @@ img {
   font-size: 60px;
   line-height: 1.3;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 5px;
 }
 
 .breadcrumbs {
@@ -637,7 +625,7 @@ img {
   background: #83b3d3;
   border: none;
   border-radius: 4px;
-  margin: 30px 290px;
+  margin: 20px 290px;
 }
 
 .pagination {
@@ -711,6 +699,3 @@ img {
 .mailing-descriotion-catalog {
   color: #333333;
 }
-
-
-/* В футере свг соц сети не стоят по центру */
