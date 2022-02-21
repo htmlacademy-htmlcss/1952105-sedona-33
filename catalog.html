@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
   <header class="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html" >
-        <img class="page-header-logo" src="images/logo.svg" width="139px" height="80px" alt="Логотип Седона.">
+        <img class="page-header-logo" src="images/logo.svg" width="139" height="80" alt="Логотип Седона.">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -48,7 +50,6 @@
         </li>
       </ul>
     </nav>
-    </nav>
   </header>
 
 
@@ -71,35 +72,35 @@
       </ul>
      </header>
        <h2 class="visually-hidden">Список гостиниц Седоны с фильтрами</h2>
-       <div class="catalog-filter-container">
-       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Инфраструктура:</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                <span class="check-box"></span>
-                Бассейн
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="parking space" checked>
-                <span class="check-box"></span>
-                Парковка
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi">
-                <span class="check-box"></span>
-                Wi-Fi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
+      <div class="catalog-filter-container">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+         <fieldset class="catalog-filter-group">
+           <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                   <label class="control">
+                     <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                     <span class="check-box"></span>
+                      Бассейн
+                   </label>
+                 </li>
+                 <li class="catalog-filter-item">
+                   <label class="control">
+                     <input class="control-input" type="checkbox" name="parking space" checked>
+                     <span class="check-box"></span>
+                     Парковка
+                   </label>
+                 </li>
+                 <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Wi-Fi">
+                    <span class="check-box"></span>
+                    Wi-Fi
+                  </label>
+                 </li>
+             </ul>
+         </fieldset>
+         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -124,20 +125,20 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="range-box">
+         </fieldset>
+         <fieldset class="range-box">
           <span class="price-range">Стоимость, ₽:</span>
           <div class="range-value-box">
             <div class="value-min-box">
-          <input class="range-value-min" id="min-range" type="text" placeholder="от" value="0">
-          <span class="value-min" for="min-range">от</span>
-        </div>
-        <div class="value-max-box">
-          <input class="range-value-max" id="max-range" type="text" placeholder="до" value="9000">
-          <span class="value-max" class="max" for="max-range">до</span>
-        </div>
-        </div>
-        <div class="range">
+             <input class="range-value-min" type="text" value="0">
+             <span class="value-min">от</span>
+           </div>
+           <div class="value-max-box">
+             <input class="range-value-max" type="text" value="9000">
+             <span class="value-max">до</span>
+           </div>
+         </div>
+         <div class="range">
           <div class="range-bar">
             <button class="range-toggle toggle-min">
               <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -146,14 +147,14 @@
               <span class="visually-hidden">Изменить максимальную цену.</span>
             </button>
           </div>
-        </div>
-        </fieldset>
-        <div class="button-filter-container">
-         <button class="button catalog-filter-submit" type="submit">Применить</button>
-         <button class="button catalog-filter-reset" type="reset">Сбросить</button>
-        </div>
-      </div>
-       </form>
+         </div>
+         </fieldset>
+         <div class="button-filter-container">
+           <button class="button catalog-filter-submit" type="submit">Применить</button>
+           <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+         </div>
+         </div>
+        </form>
      </section>
 
      <section class="sorting-hotels">
@@ -162,7 +163,7 @@
         <p class="hotels-found">Найдено гостиниц:
          <span class="number-of-pages">38</span>
         </p>
-        <select class="select-control-sorting-hotels" name="" id="" aria-label="Сортировка">
+        <select class="select-control-sorting-hotels" name="sorting-hotels" aria-label="Сортировка">
            <option value="cheap">Сначала дешёвые</option>
            <option value="expensive">Сначала дорогие</option>
            <option value="popular">Сначала популярные</option>
@@ -291,7 +292,7 @@
         </li>
       </ul>
       <label class="number-hotels">Гостиниц на странице:
-        <select class="select-control-number-hotels " name="" id="" aria-label="Количество гостиниц на странице">
+        <select class="select-control-number-hotels" name="number-hotels" aria-label="Количество гостиниц на странице">
           <option value="4">4</option>
           <option value="8">8</option>
         </select>
@@ -305,7 +306,7 @@
       <p class="mailing-descriotion mailing-descriotion-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post" >
         <label class="visually-hidden" for="field-email">Введите ваш email</label>
-        <input class="field-email" id="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
+        <input class="field-email" id="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email">
         <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>
     </section>
