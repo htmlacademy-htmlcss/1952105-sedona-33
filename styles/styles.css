@@ -516,8 +516,8 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  width: 1056px;
-  height: 109px;
+  width: 1069px;
+  height: 101px;
   margin: 0 auto;
 }
 
@@ -526,13 +526,17 @@ img {
   justify-content: start;
   flex-wrap: wrap;
   align-items: baseline;
-  max-width: 150px;
+  max-width: 180px;
   list-style: none;
   padding: 0;
 }
 
+li.footer-social-item:first-child {
+  margin-left: -6px;
+}
+
 .footer-social-link {
-  padding: 2px 7px;
+  padding: 5px 14px;
 }
 
 .footer-social-icon:hover path {
@@ -568,6 +572,7 @@ img {
   text-decoration: none;
   color: #000000;
   margin-right: 16px;
+  margin-left: 9px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -587,6 +592,7 @@ img {
 .htmlacademy-link {
   display: inline-block;
   color: #000000;
+  margin-right: 5px;
 }
 
 .htmlacademy-icon svg {
@@ -621,7 +627,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   min-width: 100%;
-  height: 408px;
+  height: 405px;
   background-color: #587392;
   background: center/100% no-repeat url("../images/catalog-background.jpg");
   color: #ffffff;
@@ -633,13 +639,13 @@ img {
   justify-content: start;
   margin-left: 71px;
   margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 1.294;
+  line-height: 1.200;
   margin: 0;
 }
 
@@ -647,7 +653,7 @@ img {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 108px;
+  width: 113px;
   font-size: 16px;
   line-height: 1.2;
   list-style: none;
@@ -802,7 +808,7 @@ img {
   min-width: 287px;
   border: none;
   padding: 0;
-  margin-left: 112px;
+  margin-left: 122px;
 }
 
 .price-range {
@@ -962,6 +968,7 @@ img {
 }
 
 .button-filter-container {
+  font-family: "PT Sans", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1117,7 +1124,7 @@ img {
 .hotels-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  row-gap: 10px;
+  row-gap: 13px;
   column-gap: 18px;
   font-size: 18px;
   line-height: 1.27;
@@ -1132,7 +1139,7 @@ img {
   width: 340px;
   display: grid;
   grid-template-columns: auto auto auto;
-  row-gap: 15px;
+  row-gap: 12px;
   column-gap: 7px;
   align-items: center;
   padding: 20px;
@@ -1170,16 +1177,18 @@ img {
 .hotels-card-title {
   font-size: 24px;
   line-height: 1.294;
-  margin-top: 16px;
+  margin-top: 4px;
   margin-bottom: 2px;
 }
 
 .house-group {
   grid-column: 1/2;
+  margin-bottom: 6px;
 }
 
 .price-hotels {
   grid-column: 3/4;
+  margin-bottom: 6px;
 }
 
 .hotels-card-button {
@@ -1278,6 +1287,7 @@ img {
   text-transform: uppercase;
   background: #f2f2f2;
   border-radius: 4px;
+  margin-bottom: 3px;
 }
 
 /*pagination*/
@@ -1638,19 +1648,19 @@ img {
   background: transparent;
 }
 
-.htmlacademy-link {
-  display: inline-block;
-  color: #000000;
+.minus-button svg {
+  opacity: 0.3;
 }
 
-.htmlacademy-icon svg {
-  color: inherit;
+.minus-button:hover svg{
+  opacity: 1;
 }
-.minus-button {
-  color: #000000;
-}
-.minus-svg svg{
-color: inherit;
+
+.minus-button:focus-visible {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+  outline-offset: 0 ;
+  border-radius: 4px;
 }
 
 .plus-button {
@@ -1659,6 +1669,20 @@ color: inherit;
   right: 2px;
   border: none;
   background: transparent;
+}
+
+.plus-button svg {
+  opacity: 0.3;
+}
+
+.plus-button:hover svg{
+  opacity: 1;
+}
+
+.plus-button:focus-visible {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .children-box .plus-button {
@@ -1717,7 +1741,8 @@ color: inherit;
   position: absolute;
   display: inline-block;
   top: -31px;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 19px;
   height: 9px;
   border: 20px solid transparent;
